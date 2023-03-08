@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<students>
+<student number="B001">
+    <studentName>熊大</studentName>
+    <studentAge>18</studentAge>
+    <studentSport>打光头强</studentSport>
+</student>
+<student number="B002">
+    <studentName>熊2</studentName>
+    <studentAge>10</studentAge>
+    <studentSport>吃蜜</studentSport>
+</student>
+<student number="B003">
+    <studentName>光头强</studentName>
+    <studentAge>55</studentAge>
+    <studentSport>打熊</studentSport>
+</student>
+</students>

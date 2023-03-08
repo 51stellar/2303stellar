@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/workplace/myFirstProject">
+        <classes>
+            <class name="com.qiaort.baseJAVA.testNGTester.Tester">
+                <methods><include name="test"/>
+                </methods>
+            </class>
+<!--           <class name="com.qiaort.test.TestCase">-->
+<!--            <methods>-->
+<!--                <include name="openWebBaidu"/>-->
+<!--                <include name="testName"/>-->
+<!--                <include name="testXpath"/>-->
+<!--                <include name="testCss"/>-->
+<!--                <include name="testAction"/>-->
+<!--                <include name="baiduMap"/>-->
+<!--                <include name="testSwitchWindows"/>-->
+<!--                <include name="testSwitchFrame"/>-->
+<!--                <include name="setImplicity"/>-->
+<!--                <include name="setTimeout"/>-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--            <class name="com.qiaort.test.assertTest">-->
+<!--                <methods>-->
+<!--                <include name="assertTest1"/>-->
+<!--            </methods>-->
+<!--            </class>-->
+<!--            <class name="com.qiaort.test.gpmLogin">-->
+<!--                <methods>-->
+<!--                    <include name="LoginAndSetCookie"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="com.qiaort.test.gpmProcess.BuProcess">-->
+<!--                <methods>-->
+<!--                    <include name="Login"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="com.qiaort.baseJAVA.testNGTester.TestngParameterDemo">
+                <methods>
+                    <include name="run"/>
+                </methods>
+            </class>
+
+        <!-- 定义参数 -->
+<class name="com.qiaort.baseJAVA.testNGTester.DataProviderDemo">
+    <methods>
+        <include name="run"/>
+    </methods>
+</class>
+        </classes>
+    </test>
+    <parameter name="browserType" value="firefox"></parameter>
+</suite>

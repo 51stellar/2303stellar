@@ -1,0 +1,91 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+<!--        给窗口绑定就绪事件-->
+<!--        <script type="text/javascript">-->
+<!--            window.onload=function () {-->
+<!--                var dom1 = document.getElementById("xuehao");-->
+<!--                var dom2 = document.getElementById("name");-->
+<!--                dom1.onblur = function () {-->
+<!--                    alert("从学号移开了");-->
+<!--                }-->
+<!--                dom2.onfocus = function () {-->
+<!--                    alert("name聚焦了");-->
+<!--                    dom2.onmouseover = function () {-->
+<!--                        alert("鼠标一上来了");-->
+<!--                    }-->
+
+<!--                }-->
+<!--            }-->
+<!--        </script>-->
+    </head>
+    <meta charset="UTF-8">
+<!--    //引用css文件-->
+    <link rel="stylesheet" type="text/css" href="test01.css">
+<!--使用循环-->
+<!--    <script type="text/javascript">-->
+<!--        for(var i=1;i<5;i++){-->
+<!--        alert(i);-->
+<!--        }-->
+<!--    </script>-->
+
+    <title>Title</title>
+    <body>
+       <form>
+       <table>
+        <tr><td>
+           姓名
+        </td> <td><input id="name"  value="name"></td></tr>
+    <tr><td>
+        学号
+    </td><td><input id="xuehao" value="xuehao"></td></tr>
+    <tr><td>
+        <button ondblclick="clearText()">重置</button>
+    </td>
+        <td>  <button ondblclick="tanchu()">弹出</button></td>
+    </tr>
+    </table>
+    </form>
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript">-->
+<!--        const vm=new vue({-->
+<!--            el:'#clear',-->
+<!--            data:{-->
+<!--            },-->
+<!--            methods: {-->
+<!--                clearText() {-->
+<!--                    document.getElementById("name").value = '';-->
+<!--                    document.getElementById("xuehao").value = '';-->
+<!--                }-->
+<!--            }-->
+<!--        })-->
+       <!--           </script>-->
+             <script type="text/javascript">
+              function  tanchu() {
+                  var a=document.getElementById("name");
+                  var b=document.getElementById("xuehao");
+                  alert(a.value+b.value);
+              }
+              function clearText() {
+                  var a=document.getElementById("name");
+                  a.nodeValue='';
+                  document.getElementById("xuehao");
+              }
+             </script>
+
+          //无序列表
+          <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          </ul>
+          //有序列表
+          <ol>
+          <li class="head">qqq</li>
+          <li>qqq</li>
+          <li>qqq</li>
+          </ol>
+          //内联框架
+      <!--    <iframe src="https://www.iqiyi.com/" width="800px" height="800px"></iframe>-->
+
+    </body>
+    </html>
